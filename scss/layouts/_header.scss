@@ -1,0 +1,28 @@
+header {
+	height: 65px;
+	width: 100%;
+	margin-bottom: 60px;
+	background: $headerDarkerColor;
+	position: fixed;
+	z-index: 5;
+}
+
+.header_container {
+	display: flex;
+	height: 100%;
+	margin-bottom: 5px;
+}
+
+.header_logo {
+	flex-basis: 70%;
+}
+
+nav {
+	flex-basis: 30%;
+}
+.dummy_header {
+	height: 65px;
+	margin-bottom: 60px;
+}
+
+

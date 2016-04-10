@@ -1,0 +1,32 @@
+.title_wrapper {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+.title_info_container {
+	text-align: center;
+	margin: 0 auto 120px;
+}
+.title_name {
+	margin: 0;
+	letter-spacing: 1px;
+}
+.title_statement {
+	font-size: 1em;
+	margin: 5px 0 19px 0;
+}
+.title_link_box {
+	padding: 7px 20px;
+	border: 1px solid $accentColor;
+	display: inline-block;
+	cursor: pointer;
+}
+.i-logo-container {
+	margin: 0 auto;
+	height: 90px;
+	width: 90px;
+	svg {
+		height: 100%;
+		width: 100%;
+	}
+}

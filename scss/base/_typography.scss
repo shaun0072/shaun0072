@@ -1,0 +1,32 @@
+body {
+	font-size: 16px;
+}
+.header_logo {
+	padding: 10px 0 0 10px;
+	font-size: 35px;
+	font-family: 'Reenie Beanie', cursive;
+	color: $offWhite;
+	a {
+	  color: inherit;
+	}
+	span {
+	  font-family: $specialty-font;
+	}
+}
+.header_logo span {
+	font-size: 25px;
+	color: inherit;
+	font-weight: $thick;
+}
+.title_name {
+	color: $accentColor;
+	font-family: $baseFont;
+}
+.title_statement {
+	color: $headerDarkerColor;
+	font-family: $specialty-font;
+}
+.title_link {
+	color: $headerDarkerColor;
+	font-family: $specialty-font;
+}

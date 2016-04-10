@@ -1,0 +1,7 @@
+.i_base,
+.circle_base {
+	fill: rgb(216, 216, 216);
+	@include tablet {
+		animation: example 16s linear infinite;
+	}
+}

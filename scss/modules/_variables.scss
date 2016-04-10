@@ -1,0 +1,48 @@
+/**********Colors************/
+$accentColor                   :   #EE524B;
+$headerFontColor    :   #7F7C7D;
+$headerDarkerColor  :   #221E1F;
+$headerSpanColor    :   #312D2E;
+$headerIconColor    :   #3F3F3F;
+$offWhite           :   #d8d8d8;
+$greyOut            :   rgb( 154, 146, 148 );
+
+
+/**********Typography************/
+$baseFont      :  'Palanquin', sans-serif;
+$specialty-font : 'Lato', sans-serif;
+$thin           :  100;
+$thick			:  700;
+$lg-font        : 1.9em;
+$md-font        : 1.3em;
+$sm-font        : .9em;
+$mini-font      : .5em;
+
+/**********Mixins************/
+
+
+/**********Extends************/
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+}
+
+/*********************Media Queries*********************/
+$tablet-width : 768px;
+$desktop-width : 1024px;
+
+@mixin tablet {
+	@media (min-width: #{$tablet-width}) {
+		@content;
+	}
+}
+@mixin desktop {
+	@media (min-width: #{$desktop-width}) {
+		@content;
+	}
+}

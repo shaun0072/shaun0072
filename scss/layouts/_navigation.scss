@@ -1,0 +1,36 @@
+/******************Mobile Navigation*******************/
+#nav_overlay {
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(216, 216, 216);
+  z-index: 3;
+}
+
+.nav_list {
+  height: 70%;
+}
+
+.nav_item {
+  height: 33%;
+  -webkit-backface-visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  padding: 15px;
+  transition: all 1s;
+  a {
+	font: bold 40px $baseFont;
+    color: inherit;
+	padding: 10px;
+	transition: all 0.2s;
+  }
+  :hover {
+	  color: $accentColor;
+  }
+}
+.selected {
+	color: $accentColor;
+}

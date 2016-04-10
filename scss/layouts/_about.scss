@@ -1,0 +1,262 @@
+.about_wrapper {
+	padding: 10px;
+	@include tablet {
+		padding: 15px;
+	}
+	@include desktop {
+		max-width: 1500px;
+		margin: 0 auto;
+	}
+}
+.pic_with_icons_container {
+	@include tablet {
+		margin: 50px 0;
+	}
+}
+.profile_pic_container {
+	width: 160px;
+	margin: 0 auto;
+	@include desktop {
+		width: 200px;
+	}
+	img {
+		border-radius: 50%;
+	}
+}
+.icon_group_below_pic {
+	display: flex;
+	flex-wrap: nowrap;
+	width: 230px;
+	margin: 0 auto;
+	.social_icon_container {
+		width: 45px;
+		height: 45px;
+		border: 1.5px solid $accentColor;
+		border-radius: 50%;
+		margin: 0 6px;
+		overflow: hidden;
+		transition: all 100ms;
+		&:hover {
+			transform: scale(1.2);
+			background: $headerDarkerColor;
+		}
+		&:hover svg{
+			fill: $accentColor;
+		}
+	}
+	.social_icon_container:nth-child(1),
+	.social_icon_container:nth-child(4) {
+		margin-top: -25px;
+	}
+	svg {
+		fill: $greyOut;
+		max-width: 80%;
+		margin-left: 5px;
+		transition: all 100ms;
+	}
+}
+.hist_cred_goal_container {
+	@include tablet {
+		display: flex;
+		flex-wrap: wrap;
+		.history_container{
+			flex-basis: 100%;
+			padding: 15px;
+		}
+		.credentials_container {
+			flex-basis: 40%;
+			padding: 15px;
+			max-width: 40%;
+		}
+		.goals_container {
+			flex-basis: 60%;
+			padding: 15px;
+			max-width: 60%;
+		}
+	}
+	@include desktop {
+		.history_container {
+			flex-basis: 40%;
+			max-width: 40%;
+		}
+		.credentials_container {
+			flex-basis: 25%;
+			max-width: 25%;
+		}
+		.goals_container {
+			order: -1;
+			flex-basis: 35%;
+			max-width: 35%;
+		}		
+	}
+}
+	h3 {
+		color: $accentColor;
+		letter-spacing: 2px;
+		margin: 40px 0 3px 0;
+		font-weight: 400;
+		@include tablet {
+			font-weight: 600;
+			font-size: 1.2em;
+		}
+	}
+	p {
+		line-height: 21px;
+		font-size: 0.875em;
+		margin-top: 3px;
+		@include tablet {
+			font-size: 1em;
+			line-height: 25px;
+		}
+	}
+.skills_and_techniques_container {
+	@include tablet {
+		margin: 80px 0;
+	}
+	h3 {
+		color: $headerDarkerColor;
+		font-size: 25px;
+		font-weight: 400;
+		margin: 65px 0 10px;
+		@include tablet {
+			flex-basis: 100%;
+			font-size: 36px;
+			text-align: center;
+			font-weight: 400;
+		}
+	}
+	.design_container {
+		@include tablet {
+			width: 30%;
+			float: right;
+		}
+	}
+	.development_container {
+		@include tablet {
+			width: 70%;
+			float:left;
+
+		}
+	}
+	.list_headings {
+		font-size: 20px;
+		font-weight: 400;
+		margin: 25px 0 0;
+		@include tablet {
+			font-size: 22px;
+		}
+	}
+	.skills_list,
+	.techniques_list,
+	.tools_list {
+		list-style-type: disc;
+		padding-left: 35px;
+		li {
+			@include tablet {
+				font-size: 1em;
+			}
+		}
+	}
+}
+.development_and_wrench_wrapper,
+.design_and_paintbrush_wrapper {
+	margin-top: 35px;
+	display: flex;
+	text-align:center;
+	.wrench_container,
+	.paintbrush_container {
+		height: 65px;
+		width: 65px;
+		padding: 7px;
+		display: inline-block;
+		border: 3px solid black;
+		border-radius: 50%;
+		use {
+			fill: black;
+		}
+	}
+	.container_headings {
+		font-size: 24px;
+		font-weight: 400;
+		display: inline-block;
+		margin: 0px 0 0 15px;
+		@include tablet {
+			font-size: 30px;
+		}
+	}
+}
+.skills_container {
+	@include tablet {
+		float: left;
+		width: 30%;
+	}
+}
+.patterns_and_techniques_container {
+	@include tablet {
+		float: left;
+		width: 70%;
+	}
+}
+.about_this_website_container {
+	margin: 45px 0 60px;
+	h3 {
+		font-size: 24px;
+		font-weight: 400;
+		margin-bottom: -15px;
+		color: $headerDarkerColor;
+		@include tablet {
+			font-weight: 600;
+			font-size: 30px;
+		}
+	}
+	p {
+		line-height: 21px;
+		margin: 30px 0;
+	}
+
+}
+.resume_download_container {
+	background: $headerDarkerColor;
+	color: $offWhite;
+	text-align: center;
+	line-height: 21px;
+	padding: 15px 0 50px;
+	h3 {
+		text-transform: uppercase;
+		font-weight: 300;
+		font-size: 25px;
+		@include tablet {
+			font-size: 35px;
+		}
+	}
+	p {
+		margin: 50px 0;
+		@include tablet {
+			font-size: 19px;
+		}
+	}
+	.resume_btn {
+		display: inline-block;
+		text-transform: uppercase;
+		color: $accentColor;
+		background: inherit;
+		border: 1px solid $accentColor;
+		padding: 15px 35px;
+		a {
+			color: inherit;
+			font-size: 0.875em;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

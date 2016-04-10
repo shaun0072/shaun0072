@@ -1,0 +1,53 @@
+@keyframes example {
+    0%  {background-color: rgb(255, 255, 255);fill: rgb(255, 255, 255);}
+    11% {background-color: rgb(244, 244, 244);fill: rgb(244, 244, 244);}
+    22% {background-color: rgb(234, 234, 234);fill: rgb(234, 234, 234);}
+    33% {background-color: rgb(226, 226, 226);fill: rgb(226, 226, 226);}
+	44% {background-color: rgb(216, 216, 216);fill: rgb(216, 216, 216);}
+	55%  {background-color: rgb(226, 226, 226);fill: rgb(226, 226, 226);}
+    66% {background-color: rgb(234, 234, 234);fill: rgb(234, 234, 234);}
+    77% {background-color: rgb(234, 234, 234);fill: rgb(234, 234, 234);}
+    88% {background-color: rgb(244, 244, 244);fill: rgb(244, 244, 244);}
+	100% {background-color: rgb(255, 255, 255);fill: rgb(255, 255, 255);}
+}
+@keyframes circle {
+	50% {transform: translate()}
+}
+* {
+	box-sizing: border-box;
+}
+body {
+	height: calc(100vh - 100px);
+	font-family: $baseFont;
+    width: 100%;
+    background-color: rgb(216, 216, 216);
+	@include tablet {
+		animation: example 16s linear infinite;
+	}
+    
+}
+.circles {
+	background: white;
+	height: 1px;
+	width: 1px;
+	border-radius: 50%;
+	margin: auto;
+	animation: circle 6s linear infinite;	
+}
+a {
+	text-decoration: none;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+img ,
+svg {
+	max-width: 100%;
+}
+svg {
+	height: 100%
+}
+
+

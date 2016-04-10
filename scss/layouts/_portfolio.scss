@@ -1,0 +1,98 @@
+.portfolio_wrapper {
+	padding: 0 7px;
+	@include tablet {
+		margin-bottom: 150px;
+	}
+	@include desktop {
+		margin: 0 auto;
+		max-width: 1500px;
+	}
+}
+.portfolio_title_section {
+	text-align: center;
+	svg {
+		height: 100px;
+		width: 100px;
+	}
+	h1 {
+		margin: 0;
+		font-family: 'Playfair Display', serif;
+		font-weight: 600;
+		font-size: 32px;
+		letter-spacing: 2px;
+		@include tablet {
+			font-size: 42px;
+		}
+	}
+	h3 {
+		margin: 6px auto;
+		font-family: $specialty-font;
+		font-weight: 400;
+		font-size: .875em;
+		color: $headerDarkerColor;
+		@include tablet {
+			font-size: 1em;
+			max-width: 80%;
+		}
+		@include desktop {
+			max-width: 600px;
+		}
+	}
+}
+.portfolio_projects_wrappper {
+	@include tablet {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+.thumbnail_and_describe_container {
+	margin-top: 100px;
+	@include tablet {
+		flex-basis: 50%;
+		padding: 20px;
+		max-width: 50%;
+	}
+	@include desktop {
+		flex-basis: 33.33333%;
+		max-width: 33.33333%;
+	}
+}
+.project_title_and_dropdown_icon {
+	h4 {
+		float: left;
+		font-size: 1.1em;
+		margin: 0;
+		@include tablet {
+			font-size: 1.2em;
+		}
+	}
+	svg {
+		fill: $greyOut;
+		float: right;
+		height: 31px;
+		width: 31px;
+		cursor: pointer;
+		transition: all 200ms;
+		&:hover {
+			fill: $accentColor;
+		}
+	}
+}
+.describe_and_technologies_container {
+	display: none;
+	p {
+		line-height: 21px;
+		font-size: 0.875em;
+		@include tablet {
+			font-size: 1em;
+		}
+	}
+	h5 {
+		font-size: 1em;
+		margin: 0;
+		font-weight: 700;
+	}
+	ul {
+		padding: 7px 0 0 25px;
+	}
+}

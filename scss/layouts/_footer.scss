@@ -1,0 +1,77 @@
+footer {
+	margin-top: 100px;
+	@include tablet {
+		margin-top: 85px;
+	}
+	.contact_container {
+		margin: 50px auto;
+		max-width: 200px;
+	}
+	a {
+		display: block;
+		color: $headerDarkerColor;
+		font-size: 0.875em;
+		@include tablet {
+			font-size: 1.1em;
+		}
+	}
+}
+.phone_number {
+    background: url("../assets/svg/phone-icon.svg") no-repeat 0 0;
+    background-size: 18px 18px;
+    background-position-y: 6px;
+    padding-left: 24px;
+	@include tablet {
+		background-size: 24px 24px;
+		background-position-y: 5px;
+		padding-left: 35px;
+	}
+}
+.email {
+	background: url("../assets/svg/email-icon.svg") no-repeat 0 0;
+    background-size: 18px 18px;
+    background-position-y: 4px;
+    padding-left: 24px;
+		@include tablet {
+			background-size: 24px 24px;
+			background-position-y: 6px;
+			padding-left: 35px;
+		}
+}
+.footer_social_icons_group {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	svg {
+		fill: $greyOut;
+		height: 28px;
+		width: 28px;
+		margin: 0 16px;
+		transition: all 200ms;
+		@include tablet {
+			margin: 40px 40px 0;
+		}
+		&:hover {
+			fill: $headerDarkerColor;
+			transform: scale(1.1);
+		}
+	}
+	
+}
+.back_to_top {
+	height:50px;
+	width:90px;
+	border-radius: 90px 90px 0 0;
+	border: 2px solid black;
+	border-bottom: none;
+	margin: 35px auto 0;
+	text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 30px;
+	transition: all 100ms;
+	&:hover {
+		color: $offWhite;
+		background: $headerDarkerColor;
+	}
+}
