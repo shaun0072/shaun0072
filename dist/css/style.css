@@ -501,7 +501,8 @@ nav {
   position: fixed;
   align-items: center;
   justify-content: center;
-  background-color: #d8d8d8; }
+  background-color: #d8d8d8;
+  z-index: 3; }
 
 .nav_list {
   height: 70%; }

@@ -54,4 +54,15 @@ $('.project_title_and_dropdown_icon svg').on('click', function(event) {
 			});
 		}
 })
+/* Link Scrolling */
+$('a[href^="#"]').on('click',function (e) {
+  e.preventDefault();
+​
+  var target = this.hash;
+  var $target = $(target);
+​
+    $('html, body').stop().animate({
+         'scrollTop': $target.offset().top
+    }, 800, 'swing');
+});
 //# sourceMappingURL=app.js.map
